@@ -45,7 +45,7 @@ $groups = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <!-- キャラクター保管所登録フォーム -->
         <div id="charasheet_form">
             <h2>キャラクター保管所から登録</h2>
-            <form id="charasheet_form_element" method="post" action="create_character_handler.php">
+            <form id="charasheet_form_element" method="post" action="create_character_handler_charasheet.php">
                 <label>キャラクター保管所URL: <input type="url" name="charasheet_url" required></label><br>
                 <label>所属グループ:
                     <select name="group_id" required>
@@ -61,6 +61,9 @@ $groups = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <button type="submit">キャラクター保管所登録</button>
             </form>
         </div>
+
+
+
 
         <!-- いあきゃら登録フォーム -->
         <div id="iachara_form">
